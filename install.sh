@@ -5,12 +5,12 @@ echo "Just press ENTER if you use default config."
 echo 
 read -p "server address (default: changeme.fuckgfw.com):" ss_server
 [ -z "${ss_server}" ] && ss_server="changeme.fuckgfw.com"
-read -p "server port (default: 22222):" ss_port
-[ -z "${ss_port}" ] && ss_port="22222"
+read -p "server port (default: 8888):" ss_port
+[ -z "${ss_port}" ] && ss_port="8888"
 read -p "password (default: 12345678):" ss_password
 [ -z "${ss_password}" ] && ss_password="ss_password"
-read -p "method (default: rc4-md5):" ss_method
-[ -z "${ss_method}" ] && ss_method="rc4-md5"
+read -p "method (default: aes-256-cfb):" ss_method
+[ -z "${ss_method}" ] && ss_method="aes-256-cfb"
 echo
 echo "Please input your ISP dns or public dns you want to use"
 read -p "(default: 114.114.114.114):" public_dns
